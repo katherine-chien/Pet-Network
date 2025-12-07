@@ -1,0 +1,18 @@
+=== Insert a test user ===
+Saved user id: 12
+
+=== Get user by id ===
+UserDto{userId=12, role='normal', username='testuser123', email='testuser@example.com', createdAt=2025-11-04 14:30:12.0}
+
+=== Update user username ===
+UserDto{userId=12, role='normal', username='testuser_updated', email='testuser@example.com', createdAt=2025-11-04 14:30:12.0}
+
+=== All users (first 10) ===
+UserDto{userId=1, role='admin', username='admin1', email='admin@example.com', createdAt=2024-09-01 09:00:00.0}
+UserDto{userId=2, role='vet', username='vetbob', email='vetbob@example.com', createdAt=2024-10-01 08:00:00.0}
+...
+=== Join: user with pets (if any) ===
+UserWithPet{userId=12, username='testuser_updated', petId=3, petName='Fluffy', species='dog', breed='Shiba Inu'}
+=== Delete test user ===
+Deleted. Confirm get() returns null: null
+

@@ -1,0 +1,14 @@
+=== Insert a test appointment ===
+Saved appointment id: 34
+
+=== Get appointment by id ===
+AppointmentDto{appointmentId=34, vetId=1, petId=1, createdByUserId=1, startTime=2025-11-04 15:30:00.0, endTime=2025-11-04 16:30:00.0, status='scheduled'}
+
+=== Update appointment status ===
+AppointmentDto{appointmentId=34, vetId=1, petId=1, createdByUserId=1, startTime=2025-11-04 15:30:00.0, endTime=2025-11-04 16:30:00.0, status='completed'}
+
+=== Get appointments for vet 1 (join) ===
+AppointmentWithDetails{appointmentId=34, start=2025-11-04 15:30:00.0, end=2025-11-04 16:30:00.0, status='completed', petId=1, petName='Fluffy', ownerId=1, ownerName='petlover', vetId=1, clinicName='Happy Pets Clinic'}
+
+=== Delete appointment ===
+Deleted. Confirm get() returns null: null

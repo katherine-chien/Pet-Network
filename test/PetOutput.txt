@@ -1,0 +1,14 @@
+=== Insert a test pet ===
+Saved pet id: 23
+
+=== Get pet by id ===
+PetDto{petId=23, ownerUserId=1, name='Fluffy', species='dog', breed='Shiba Inu', birthdate=2020-05-01}
+
+=== Update pet name ===
+PetDto{petId=23, ownerUserId=1, name='Fluffy Jr', species='dog', breed='Shiba Inu', birthdate=2020-05-01}
+
+=== Find dogs with owners ===
+PetWithOwner{petId=23, petName='Fluffy Jr', species='dog', breed='Shiba Inu', ownerId=1, ownerUsername='petlover'}
+
+=== Delete test pet ===
+Deleted. Confirm get() returns null: null
